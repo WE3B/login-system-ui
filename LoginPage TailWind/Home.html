@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">@custom-variant dark (&:where(.dark, .dark *));</style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-white">
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-0 w-72 h-72 rounded-full bg-pink-300/30 blur-3xl dark:bg-pink-500/20"></div>
+        <div class="absolute top-20 right-0 w-80 h-80 rounded-full bg-purple-300/30 blur-3xl dark:bg-purple-500/20"></div>
+        <div class="absolute bottom-0 left-1/3 w-96 h-96 rounded-full bg-cyan-200/30 blur-3xl dark:bg-cyan-500/10"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-white/20 bg-white/60 backdrop-blur-md dark:bg-gray-900/60 dark:border-gray-700">        
+        <nav class="flex items-center justify-between px-6 py-4 md:px-8">
+            <div>
+                <a class="text-4xl hover:text-pink-400 font-bold" href="#hero">Zohaib</a>
+            </div>
+            <button id="menu-btn" class="md:hidden border border-gray-400 dark:border-white rounded-full px-3 py-1 cursor-pointer">☰</button>
+            <div id="nav-links" class="hidden absolute top-full left-0 w-full flex-col gap-4 bg-white dark:bg-gray-900 p-6 shadow-lg md:static md:w-auto md:flex md:flex-row md:items-center md:gap-5 md:bg-transparent md:p-0 md:shadow-none">                
+                <a class="hover:text-pink-400 hover:underline transition" href="#aboutMe">About Me</a>
+                <a class="hover:text-pink-400 hover:underline transition" href="#education">Education</a>
+                <a class="hover:text-pink-400 hover:underline transition" href="#experience">Experience</a>
+                <a class="hover:text-pink-400 hover:underline transition" href="#projects">Projects</a>
+                <a class="hover:text-pink-400 hover:underline transition" href="#contact">Contact</a>
+                <button class="border dark:border-white border-gray-400 rounded-full p-2 hover:text-pink-400 hover:underline transition cursor-pointer" id="theme-btn">Dark/Light</button>
+                <button class="border dark:border-white border-gray-400 rounded-full p-2 text-pink-500 hover:underline transition cursor-pointer" id="logout-btn">Log out</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <section id="hero" class="min-h-screen flex items-center">
+        
+        <div class="max-w-4xl mx-auto px-6 space-y-6">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                Zohaib Zeeshan
+            </h1>
+
+            <h2 class="text-2xl md:text-3xl font-semibold">
+                Software Developer | Quality Assurance Analyst | AI Researcher              
+            </h2>
+            <p class="max-w-2xl text-lg leading-8">
+                Computer Science graduate from the University of Windsor with experience in full-stack development, software testing, and machine learning research. Passionate about building reliable, scalable, and user-focused applications.
+            </p>
+            <div class="flex gap-4 flex-wrap">
+                <a href="#projects" class="px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
+                    Projects
+                </a>
+                <a href="#contact" class="px-6 py-3 border border-gray-400 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutMe" class="min-h-screen flex items-center">
+    <div class="max-w-3xl mx-auto px-6 space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold">
+            About Me
+        </h2>
+
+        <p class="text-lg leading-7 max-w-2xl text-justify">
+            I am a Computer Science graduate from the University of Windsor with experience in software development, quality assurance, and AI research. My work combines hands-on programming with testing and machine learning experimentation to build reliable and intelligent software systems. During my academic and professional experience, I have worked on full-stack development projects, end-to-end manual testing, and research focused on improving recommendation systems using large language models. I enjoy solving complex technical problems and continuously improving software quality through structured testing and efficient development practices. I am currently seeking Software Engineer and Quality Assurance Analyst opportunities where I can contribute to building high-quality software products.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-semibold">Skills</h3>
+
+        <div class="max-w-2xl flex flex-wrap gap-3 text-sm">
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">JavaScript</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Python</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">HTML</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">CSS</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">React</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Node.js</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Express.js</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">MongoDB</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Manual Testing</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Test Case Design</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Regression Testing</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Unit Testing</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Git</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Jira</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">REST APIs</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">Machine Learning</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">TensorFlow</span>
+            <span class="px-3 py-1 rounded-full bg-pink-300 dark:bg-pink-500/30">PyTorch</span>
+
+        </div>
+    </div>
+    </section>
+
+    <section id="education" class="min-h-screen flex items-center">
+        <div class="max-w-3xl mx-auto px-6 space-y-8">
+            <h2 class="text-3xl md:text-4xl font-bold">Education</h2>
+            <div class="space-y-2">
+                <h3 class="text-xl md:text-2xl font-semibold">
+                    Master of Science (MSc) in Computer Science
+                </h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    University of Windsor • Sep 2023 – Jun 2025
+                </p>
+                <p class="text-lg leading-7 max-w-2xl">
+                    Specialized in software engineering, machine learning, and artificial intelligence.
+                    Conducted research on cross-domain recommendation systems using large language models.
+                </p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl md:text-2xl font-semibold">
+                    Bachelor of Science in Computer Science
+                </h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    University of Management and Technology (UMT) • 2018 – 2022
+                </p>
+                <p class="text-lg leading-7 max-w-2xl">
+                    Studied core computer science topics including programming, software development,
+                    data structures, and database systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="min-h-screen flex items-center">
+        <div class="max-w-3xl mx-auto px-6 space-y-8">
+            <h2 class="text-3xl md:text-4xl font-bold">Experience</h2>
+            <div class="space-y-2">
+                <h3 class="text-xl md:text-2xl font-semibold">Quality Assurance Analyst</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    Devntion • Jul 2025 – Present • Remote
+                </p>
+                <ul class="text-lg leading-7 max-w-2xl list-disc pl-5 space-y-1">
+                    <li>Conduct end-to-end manual testing across multiple software projects.</li>
+                    <li>Design and execute test cases for critical features such as booking and payment flows.</li>
+                    <li>Collaborate with developers to identify, track, and retest defects using Jira.</li>
+                    <li>Assist with automated testing to improve regression testing efficiency.</li>
+                </ul>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl md:text-2xl font-semibold">Graduate Research Assistant</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    University of Windsor • Sep 2023 – Apr 2025
+                </p>
+
+                <ul class="text-lg leading-7 max-w-2xl list-disc pl-5 space-y-1">
+                    <li>Conducted research on cross-domain recommendation systems using large language models.</li>
+                    <li>Performed data preprocessing, model fine-tuning, and performance evaluation.</li>
+                    <li>Improved recommendation accuracy through AI-driven experimentation.</li>
+                </ul>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl md:text-2xl font-semibold">Junior Software Engineer</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    Devntion • Nov 2022 – Jul 2023 • Remote
+                </p>
+                <ul class="text-lg leading-7 max-w-2xl list-disc pl-5 space-y-1">
+                    <li>Developed frontend and backend features for production web applications.</li>
+                    <li>Worked with technologies including Python, REST APIs, and Git.</li>
+                    <li>Collaborated with developers in an agile environment to build scalable solutions.</li>
+                </ul>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl md:text-2xl font-semibold">Junior MERN Stack Developer</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400">
+                    Game Train • Jun 2022 – Sep 2022
+                </p>
+                <ul class="text-lg leading-7 max-w-2xl list-disc pl-5 space-y-1">
+                    <li>Built full-stack web applications using MongoDB, Express, React, and Node.js.</li>
+                    <li>Developed REST APIs and interactive frontend interfaces.</li>
+                    <li>Learned modern web development workflows and version control.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="min-h-screen flex items-center">
+    <div class="max-w-3xl mx-auto px-6 space-y-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Projects</h2>
+        <div class="space-y-2">
+            <h3 class="text-xl md:text-2xl font-semibold">
+                Cross-Domain Recommendation Research
+            </h3>
+            <p class="text-lg leading-7 max-w-2xl">
+                Conducted research on improving cross-domain product recommendation systems
+                using large language models. The project focused on aspect-based sentiment
+                extraction and model fine-tuning to improve recommendation accuracy across
+                different domains.
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                Technologies: Python, Machine Learning, LLMs, Data Processing
+            </p>
+            <div class="flex gap-4 pt-2">
+                <a href="https://shorturl.at/xkDF0" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-pink-500 hover:underline">
+                    Live Demo
+                </a>
+                <a href="#" class="text-sm font-medium text-pink-500 hover:underline">
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="space-y-2">
+            <h3 class="text-xl md:text-2xl font-semibold">Authentication System</h3>
+            <p class="text-lg leading-7 max-w-2xl">
+                Built a mock authentication system with user registration, login,
+                and password reset functionality. Used LocalStorage to simulate a
+                client-side database and implemented validation and session handling.
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                Technologies: HTML, Tailwind CSS, JavaScript
+            </p>
+            <div class="flex gap-4 pt-2">
+                <a href="#" class="text-sm font-medium text-pink-500 hover:underline">
+                    Live Demo
+                </a>
+                <a href="https://github.com/WE3B/login-system-ui" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-pink-500 hover:underline">
+                    GitHub
+                </a>
+            </div>
+        </div>
+        <div class="space-y-2">
+            <h3 class="text-xl md:text-2xl font-semibold">Portfolio Website</h3>
+
+            <p class="text-lg leading-7 max-w-2xl">
+                Designed and developed a responsive personal portfolio website with
+                modern UI design, dark/light theme support, and a mobile-responsive
+                navigation system.
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                Technologies: HTML, Tailwind CSS, JavaScript
+            </p>
+            <div class="flex gap-4 pt-2">
+                <a href="#" class="text-sm font-medium text-pink-500 hover:underline">
+                    Live Demo
+                </a>
+                <a href="https://github.com/WE3B/login-system-ui" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-pink-500 hover:underline">
+                    GitHub
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-screen flex items-center">
+        <div class="max-w-3xl mx-auto px-6 space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold">Contact</h2>
+            <p class="text-lg leading-7 max-w-2xl">
+                Feel free to reach out if you'd like to collaborate, discuss opportunities,
+                or learn more about my work.
+            </p>
+            <div class="space-y-3 text-lg">
+                <p>
+                    <span class="font-semibold">Location:</span>
+                    Windsor, Ontario, Canada
+                </p>
+                <p>
+                    <span class="font-semibold">Email:</span>
+                    <a href="mailto:zohaibzeeshan999@example.com" class="text-pink-500 hover:underline"> zohaibzeeshan999@example.com</a>
+                </p>
+                <p>
+                    <span class="font-semibold">LinkedIn:</span>
+                    <a href="https://www.linkedin.com/in/zohaib-zeeshan/" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:underline">linkedin.com/in/zohaib-zeeshan</a>
+                </p>
+                <p>
+                    <span class="font-semibold">GitHub:</span>
+                    <a href="https://github.com/WE3B" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:underline">github.com/WE3B</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer class="top-0 z-50 border-b border-white/20 bg-white/60 backdrop-blur-md dark:bg-gray-900/60 dark:border-gray-700 ">
+        <p class="text-center py-4 text-sm text-gray-600 dark:text-gray-400">© 2026 Zohaib Zeeshan. All rights reserved.</p>
+    </footer>
+
+<script>
+const currentUser = localStorage.getItem("currentUser");
+
+if (!currentUser) {
+    window.location.href = "LoginPage.html";
+}
+const themeBtn = document.getElementById("theme-btn")
+const html = document.documentElement
+
+const savedTheme = localStorage.getItem("theme")
+
+const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+if (savedTheme === "dark" || (!savedTheme && systemDark)) {
+    html.classList.add("dark")
+}
+themeBtn.addEventListener("click", () => {
+html.classList.toggle("dark")
+
+if (html.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark")
+} else {
+    localStorage.setItem("theme", "light")
+}
+})
+
+const logoutbtn = document.getElementById("logout-btn")
+logoutbtn.addEventListener("click",function(){
+    localStorage.removeItem("currentUser");
+    window.location.href = "LoginPage.html"
+})
+
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+
+menuBtn.addEventListener("click", function(){
+    navLinks.classList.toggle("hidden");
+    navLinks.classList.toggle("flex");
+});
+</script>
+</body>
+</html>
